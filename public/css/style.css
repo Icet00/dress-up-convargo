@@ -180,7 +180,7 @@ h6 {
 }
 p {
     line-height: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 p:last-child {
     margin-bottom: 0px;
@@ -589,7 +589,7 @@ textarea::-ms-input-placeholder
 
 /*For Home Section*/
 .home{
-    background:url(../images/homebg.jpg) no-repeat center center;
+    background:url(../images/truck.jpg) no-repeat center center;
     color:#000;
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -638,7 +638,7 @@ textarea::-ms-input-placeholder
 .home-content .home-contact input[type="submit"]:hover{
 	background-color: rgba(0, 173, 62, 0.75);
 }
-.home-contact p{
+.home-contact input p{
     margin-top: 20px;
     color:#000;
     font-size:15px;
