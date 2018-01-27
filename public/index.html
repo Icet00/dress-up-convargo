@@ -154,6 +154,11 @@
         <div class="row">
           <div class="main_features_content2">
             <div class="col-sm-6 margin-top-60">
+              <div class="single_features_left text-center">
+                <img src="images/truck-feature2.png" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-6">
               <div class="single_features_right ">
                 <h2>PRODUCT DESCRIPTIONS</h2>
                 <p>We let you gain money by filling completly your truck, you will always be one step ahead of your concurrent.</p>
@@ -165,11 +170,6 @@
                 <div class="features_buttom">
                   <a href="" class="btn btn-default">Read More</a>
                 </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="single_features_left text-center">
-                <img src="images/truck-feature2.png" alt="" />
               </div>
             </div>
           </div>
@@ -214,10 +214,6 @@
                     <li><em><i class="fa fa-remove"></i></em>Cancel 1 day before</li>
                   </ul>
                 </div> <!-- .cd-pricing-body -->
-
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#">Purchase</a>
-                </footer>  <!-- .cd-pricing-footer -->
               </li>
               <li data-type="yearly" class="is-hidden">
                 <header class="cd-pricing-header">
@@ -236,10 +232,6 @@
                     <li><em><i class="fa fa-remove"></i></em>0,3h late average</li>
                   </ul>
                 </div> <!-- .cd-pricing-body -->
-
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#">Purchase</a>
-                </footer>  <!-- .cd-pricing-footer -->
               </li>
             </ul> <!-- .cd-pricing-wrapper -->
           </li>
@@ -263,10 +255,6 @@
 
                   </ul>
                 </div> <!-- .cd-pricing-body -->
-
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#">Purchase</a>
-                </footer>  <!-- .cd-pricing-footer -->
               </li>
 
               <li data-type="yearly" class="is-hidden">
@@ -287,10 +275,6 @@
 
                   </ul>
                 </div> <!-- .cd-pricing-body -->
-
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#">Purchase</a>
-                </footer>  <!-- .cd-pricing-footer -->
               </li>
             </ul> <!-- .cd-pricing-wrapper -->
           </li>
@@ -315,10 +299,6 @@
 
                   </ul>
                 </div> <!-- .cd-pricing-body -->
-
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#">Purchase</a>
-                </footer>  <!-- .cd-pricing-footer -->
               </li>
 
               <li data-type="yearly" class="is-hidden">
@@ -339,10 +319,6 @@
 
                   </ul>
                 </div> <!-- .cd-pricing-body -->
-
-                <footer class="cd-pricing-footer">
-                  <a class="cd-select" href="#">Purchase</a>
-                </footer>  <!-- .cd-pricing-footer -->
               </li>
             </ul> <!-- .cd-pricing-wrapper -->
           </li>
@@ -357,110 +333,136 @@
         <div class="row">
           <div class="main_service2">
             <div class="head_title text-center">
-              <h2>Find more details from our application</h2>
-              <p>You can find a truck by his company name, by it's price by kilometers or cubic. You can also find offer, with shipper name, distance needed, volume used and the multiple payment option if you want it</p>
+              <h2>Estimate your delivery cost</h2>
+              <p>That you are a shipper or a client, you can estimate your cost. Select the related variable below and you press estimate to have yours.</p>
             </div>
 
             <div class="service_content">
-              <div class="col-md-6 col-sm-6">
+
+              <!-- This two div near one below the other to easily make them near the other on the view -->
+              <div id="trucker">
+                <div id="shipper">
+
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                      <div class="single_service_left">
+                        <img src="images/name_icon.png" alt="" />
+                      </div>
+                      <div class="single_service_right">
+                        <h2>Trucker name</h2>
+                        <p>We currently have <span class="brandData">153 companies</span> register in our application.
+                          <input class="name" type="text" placeholder="Trucker name"/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                      <div class="single_service_left">
+                        <img src="images/shipper_icon.png" alt="" />
+                      </div>
+                      <div class="single_service_right">
+                        <h2>Shipper name</h2>
+                        <p>The company name of the shipper, maybe they already know you.
+                          <input class="name" type="text" placeholder="Shipper name"/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                      <div class="single_service_left">
+                       <img src="images/km_icon.png" alt="" />
+                      </div>
+                      <div class="single_service_right">
+                        <h2>Price by kilometer</h2>
+                        <p>Set the kilometer price by meter you want. <span class="brandData">The average is 1,33$/km</span>.
+                          <input class="price-by-km" type="number" placeholder="Price by km"/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6" style="padding: 20px;">
+                    <div class="single_service2">
+                      <div class="single_service_left">
+                        <img src="images/distance_icon.png" alt="" />
+                      </div>
+                      <div class="single_service_right">
+                        <h2>Shipper distance</h2>
+                        <p>The distance for the delivery.
+                          <input class="distance" type="number" placeholder="Distance in km"/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+
+                  <div class="col-md-6 col-sm-6" >
+                    <div class="single_service2">
+                      <div class="single_service_left">
+                        <img src="images/cubic_icon.png" alt="" />
+                      </div>
+                      <div class="single_service_right">
+                        <h2>Price by cubic price</h2>
+                        <p>Set the cubic price by meter you want. <span class="brandData">The average is 2,03$/m3</span>.
+                          <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                      <div class="single_service_left">
+                        <img src="images/volume_icon.png" alt="" />
+                      </div>
+                      <div class="single_service_right">
+                        <h2>Shipper by volume</h2>
+                        <p>The volume needed to do the delivery.
+                          <input class="volume" type="number" placeholder="Volume in m3"/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12">
+                    <div class="single_service2">
+                      <div class="single_service_left">
+                        <img src="images/payment_icon.png" alt="" />
+                      </div>
+                      <div class="single_service_right">
+                        <h2>Payment option</h2>
+                        <p>
+                          <input class="option" type="checkbox" class="prettycheckbox" placeholder="Deductible option"/>
+                          You want to pay in 3, 6 or 12 times ? check this box but we will include an extra fees.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-sm-12">
                 <div class="single_service2">
                   <div class="single_service_left">
-                    <img src="images/name_icon.png" alt="" />
+                    <img src="images/coin.png" alt="" />
                   </div>
                   <div class="single_service_right">
-                    <h2>Filter by name</h2>
-                    <p>We currently have <span class="brandData">153 companies</span> register in our application.
-                      <input class="name" type="text" placeholder="Trucker name"/>
+                    <h2>Estimation</h2>
+                    <p>
+                      <button id="compute">Estimate</button>
+                      
                     </p>
                   </div>
                 </div>
               </div>
-
-              <div class="col-md-6 col-sm-6">
-                <div class="single_service2">
-                  <div class="single_service_left">
-                   <img src="images/km_icon.png" alt="" />
-                 </div>
-                 <div class="single_service_right">
-                  <h2>Filter by kilometer</h2>
-                  <p>Set the kilometer price by meter you want. <span class="brandData">The average is 1,33$/km</span>.
-                    <input class="price-by-km" type="number" placeholder="Price by km"/>
-                  </p>
-                </div>
-              </div>
+              <div id="actors">
             </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="single_service2">
-                <div class="single_service_left">
-                  <img src="images/cubic_icon.png" alt="" />
-                </div>
-                <div class="single_service_right">
-                  <h2>Filter by cubic price</h2>
-                  <p>Set the cubic price by meter you want. <span class="brandData">The average is 2,03$/m3</span>.
-                    <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="single_service2">
-                <div class="single_service_left">
-                  <img src="images/shipper_icon.png" alt="" />
-                </div>
-                <div class="single_service_right">
-                  <h2>Shipper name</h2>
-                  <p>The company name of the shipper, maybe they already know you.
-                    <input class="name" type="text" placeholder="Shipper name"/>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="single_service2">
-                <div class="single_service_left">
-                  <img src="images/distance_icon.png" alt="" />
-                </div>
-                <div class="single_service_right">
-                  <h2>Shipper distance</h2>
-                  <p>The distance for the delivery.
-                    <input class="distance" type="number" placeholder="Distance in km"/>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <div class="single_service2">
-                <div class="single_service_left">
-                  <img src="images/volume_icon.png" alt="" />
-                </div>
-                <div class="single_service_right">
-                  <h2>Shipper by volume</h2>
-                  <p>The volume needed to do the delivery.
-                    <input class="volume" type="number" placeholder="Volume in m3"/>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12">
-              <div class="single_service2">
-                <div class="single_service_left">
-                  <img src="images/payment_icon.png" alt="" />
-                </div>
-                <div class="single_service_right">
-                  <h2>Payment option</h2>
-                  <p>
-                    <input class="option" type="checkbox" class="prettycheckbox" placeholder="Deductible option"/>
-                    You want to pay in 3, 6 or 12 times ? check this box but we will include an extra fees.
-                  </p>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -610,6 +612,9 @@
     <div class="scrollup">
       <a href="#"><i class="fa fa-chevron-up"></i></a>
     </div>
+    <!-- Custom check box-->
+    <script src="js/prefix.min.js"></script>
+
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/convargo.js"></script>
@@ -617,7 +622,5 @@
     <script src="js/modernizr.js"></script>
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
-    <!-- Custom check box-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   </body>
 </html>
